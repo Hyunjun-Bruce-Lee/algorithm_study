@@ -1,6 +1,7 @@
-https://programmers.co.kr/learn/courses/30/lessons/43164
+# https://programmers.co.kr/learn/courses/30/lessons/43164
 # 테스트 케이스 1번 틀림 dont know why
-
+# 아래는 이해는 했지만, 다시풀어보길 권장 (타겟넘버)
+# https://programmers.co.kr/learn/courses/30/lessons/43165
 def converter(tiket_list):
     re_dict = dict()
     for i in range(len(tiket_list)):
