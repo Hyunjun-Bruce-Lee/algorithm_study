@@ -1,4 +1,4 @@
-
+# https://www.acmicpc.net/problem/2606
 n_com = int(input())
 n_link = int(input())
 link_info = dict()
