@@ -15,7 +15,6 @@ def link_converter(wires):
             link_dict[i[1]] = [i[0]]
     return link_dict
 
-
 def linked_or_not(wires, wires_cnt):
     visit = [False]*(wires_cnt+1)
     link_dict = link_converter(wires)
@@ -38,8 +37,6 @@ def solution(n, wires):
         wires = temp.copy()
         wires.remove(wires[i])
         visit = linked_or_not(wires, wires_cnt)
-        new_ans = abs(sum(visit) - (wires_cnt - sum(visit)))
-        if new_ans < ans:
-            ans = new_ans
-
+        new_ans = abs(sum(visit) - (wires_cnt - sum(visit)))    
+        ans = min(ans,new_ans)
     return ans
