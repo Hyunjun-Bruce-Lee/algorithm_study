@@ -1,3 +1,5 @@
+### https://programmers.co.kr/learn/courses/30/lessons/17677
+
 def converter(input_string):
     return_list = list()
     for i in range(len(input_string)-1):
