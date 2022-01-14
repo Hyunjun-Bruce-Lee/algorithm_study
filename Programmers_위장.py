@@ -47,3 +47,19 @@ def solution(clothes):
     cnt = Counter([kind for name, kind in clothes])
     answer = reduce(lambda x, y: x*(y+1), cnt.values(), 1) - 1
     return answer
+
+
+## 22.01.14 다시풀어봄
+## 통과
+def solution(clothes):
+    clothes_dict = dict()
+    for i,j in clothes:
+        if j not in clothes_dict.keys():
+            clothes_dict[j] = 1
+        else:
+            clothes_dict[j] += 1
+    
+    ans = 1
+    for i in clothes_dict.keys():
+        ans *= (clothes_dict[i]+1)
+    return ans - 1
